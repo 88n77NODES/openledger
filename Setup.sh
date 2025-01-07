@@ -5,6 +5,9 @@ wget https://raw.githubusercontent.com/88n77/Logo-88n77/main/logo.sh
 chmod +x logo.sh
 ./logo.sh
 
+echo -e "\033[32mOpenLedger\033[0m"
+sleep 8
+
 echo "Оновлюємо систему..."
 sudo apt update && sudo apt upgrade -y
 
@@ -34,3 +37,6 @@ sudo apt update
 echo "Запускаємо OpenLedger Node..."
 openledger-node --no-sandbox
 
+echo "======================================="
+echo "Установка завершена!"
+echo "======================================="
